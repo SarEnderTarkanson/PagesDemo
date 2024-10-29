@@ -6,7 +6,12 @@
         {
             InitializeComponent();
 
-            MainPage = new ContentPageDemo();
+            var navPage = new NavigationPage(new MainPage());
+
+            navPage.BarBackgroundColor = Colors.Chocolate;
+            navPage.BarTextColor = Colors.White;
+
+            MainPage = navPage;
         }
     }
 }
